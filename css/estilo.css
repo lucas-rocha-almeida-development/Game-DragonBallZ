@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'FontePontuacao';
+    src: url('/fonts/Saiyan-Sans.ttf');
+}
+
+h1 {
+    font-family: FontePontuacao;
+    text-align: center;
+    color: rgb(4, 219, 201);
+    font-size: 50px;
+  
+}
+
+body {
+    background: url(/imagens/papel-de-parede-dragondragon-ball.jpg);
+    margin: 0;
+}
+
+[area-goku-dbz] {
+    position: absolute;
+    border: 5px solid dodgerblue;
+    height: 680px;
+    left: -20px;
+    width: 90%;
+    background-image: url(/imagens/gokuvoandonuvens.gif);
+    /*opacity: 0.9;*/
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-block-start: auto;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.gokunuvem {
+    position: absolute;
+    width: 100px;
+    left: calc(50% - 30px);
+    border-radius: 15px;
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.borda {
+    height: 30px;
+    width: 130px;
+    /*background: linear-gradient(90deg, #613202, #522900);*/
+    background-image: url(/imagens/esferas.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.corpo {
+    height: 150px;
+    width: 110px;
+    /*background: linear-gradient(90deg, #613202, #522900);*/
+    background-position: center;
+    background-image: url(/imagens/fundogokuegonha.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: FontePontuacao;
+    font-size: 70px;
+    z-index: 100;
+    color: blue;
+}
